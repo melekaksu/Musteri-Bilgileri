@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BARKODCU CEPTE</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="header-buttons">
+        <button id="onaylananlarBtn" class="btn btn-success">Onaylananlar</button>
+        <button id="onaydaBekleyenlerBtn" class="btn btn-warning">Onayda Bekleyenler</button>
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <div class="header-strip">
+                <h2>MÜŞTERİ BİLGİLERİ</h2>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">İşletme Adı</th>
+                            <th scope="col">Kullanıcı Adı</th>
+                            <th scope="col">Kullanıcı Şifre</th>
+                            <th scope="col">Başlangıç Tarihi</th>
+                            <th scope="col">Bitiş Tarihi</th>
+                            <th scope="col">Lisans Durumu</th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="customerTableBody">
+                        <tr>
+                            <td data-label="İşletme Adı">ERPA LTD. ŞTİ.</td>
+                            <td data-label="Kullanıcı Adı">
+                                <input type="password" value="cesim" readonly>
+                            </td>
+                            <td data-label="Kullanıcı Şifre">
+                                <input type="password" value="cesim25" readonly>
+                            <td data-label="Başlangıç Tarihi">2021-12-06</td>
+                            <td data-label="Bitiş Tarihi">2024-12-06</td>
+                            <td data-label="Lisans Durumu">106 (Gün)</td>
+                            <td class="text-end">
+                                <div class="switch">
+                                    <input class="switch-input" type="checkbox" id="toggleSwitch" checked>
+                                    <label for="toggleSwitch" class="switch-label"></label>
+                                </div>
+                            </td>                       
+                           <td>
+                                <a href="forms.html?id=45" class="btn btn-outline-info" data-row-index="1"> 
+                                    <i class="fas fa-pen"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="İşletme Adı">TREND İSTANBUL</td>
+                            <td data-label="Kullanıcı Adı">
+                                <input type="password" value="trendistanbul2021" readonly>
+                            </td>
+                            <td data-label="Kullanıcı Şifre">
+                                <input type="password" value="8998" readonly>
+                            </td>
+                            <td data-label="Başlangıç Tarihi">2022-01-10</td>
+                            <td data-label="Bitiş Tarihi">2025-01-10</td>
+                            <td data-label="Lisans Durumu">141 (Gün)</td>
+                            <td class="text-end">
+                                <div class="switch">
+                                    <input class="switch-input" type="checkbox" id="toggleSwitch1" checked>
+                                    <label for="toggleSwitch" class="switch-label"></label>
+                                </div>
+                            </td>     
+                            <td>
+                                <a href="forms.html?id=46" class="btn btn-outline-info" data-row-index="2"> 
+                                    <i class="fas fa-pen"></i>
+                                </a>
+                            </td>                                  
+                        </tr>
+                        <tr>
+                            <td data-label="İşletme Adı">Müdavim CAFE</td>
+                            <td ata-label="Kullanıcı Adı">
+                                <input type="password" value="müdavim" readonly>
+                            </td>
+                            <td  data-label="Kullanıcı Şifre">
+                                <input type="password" value="müdavim25" readonly>
+                            </td>
+                            <td data-label="Başlangıç Tarihi">2024-05-03</td>
+                            <td data-label="Bitiş Tarihi">2025-05-03</td>
+                            <td data-label="Lisans Durumu">254 (Gün)</td>
+                            <td class="text-end">
+                                <div class="switch">
+                                    <input class="switch-input" type="checkbox" id="toggleSwitch2" checked>
+                                    <label for="toggleSwitch" class="switch-label"></label>
+                                </div>
+                            </td>     
+                            <td>
+                                <a href="forms.html?id=47" class="btn btn-outline-info" data-row-index="3"> 
+                                    <i class="fas fa-pen"></i>
+                                </a>
+                           </td>                  
+                        </tr>
+                        <tr>
+                            <td data-label="İşletme Adı">TORO CAFE</td>
+                            <td data-label="Kullanıcı Adı">
+                                <input type="password" value="torocafe" readonly>
+                            </td>
+                            <td data-label="Kullanıcı Şifre">
+                                <input type="password" value="cafelatte" readonly>
+                            </td>
+                            <td data-label="Başlangıç Tarihi">2022-09-26</td>
+                            <td data-label="Bitiş Tarihi">2024-09-26</td>
+                            <td data-label="Lisans Durumu">35 (Gün)</td>
+                            <td class="text-end">
+                                <div class="switch">
+                                    <input class="switch-input" type="checkbox" id="toggleSwitch3" checked>
+                                    <label for="toggleSwitch" class="switch-label"></label>
+                                </div>
+                            </td>     
+                            <td>
+                                <a href="forms.html?id=48" class="btn btn-outline-info" data-row-index="4"> 
+                                    <i class="fas fa-pen"></i>
+                                </a>
+                           </td>                   
+                        </tr>
+                        <tr>
+                            <td data-label="İşletme Adı">SİNEM GROSS</td>
+                            <td data-label="Kullanıcı Adı">
+                                <input type="password" value="sercan" readonly>
+                            </td>
+                            <td data-label="Kullanıcı Şifre">
+                                <input type="password" value="sercan08" readonly>
+                            </td>
+                            <td data-label="Başlangıç Tarihi">2024-02-09</td>
+                            <td data-label="Bitiş Tarihi">2025-02-09</td>
+                            <td data-label="Lisans Durumu">171 (Gün)</td>
+                            <td class="text-end">
+                                <div class="switch">
+                                    <input class="switch-input" type="checkbox" id="toggleSwitch4" checked>
+                                    <label for="toggleSwitch" class="switch-label"></label>
+                                </div>
+                            </td>     
+                            <td>
+                                <a href="forms.html?id=49" class="btn btn-outline-info" data-row-index="5"> 
+                                    <i class="fas fa-pen"></i>
+                                </a>
+                           </td>                   
+                        </tr>
+                        <tr>
+                            <td data-label="İşletme Adı">MUŞ KURUHAL</td>
+                            <td data-label="Kullanıcı Adı">
+                                <input type="password" value="muskuruhal" readonly>
+                            </td>
+                            <td data-label="Kullanıcı Şifre">
+                                <input type="password" value="mg7112434" readonly>
+                            </td>
+                            <td data-label="Başlangıç Tarihi">2023-09-03</td>
+                            <td data-label="Bitiş Tarihi">2024-09-13</td>
+                            <td data-label="Lisans Durumu">22 (Gün)</td>
+                            <td class="text-end">
+                                <div class="switch">
+                                    <input class="switch-input" type="checkbox" id="toggleSwitch5" checked>
+                                    <label for="toggleSwitch" class="switch-label"></label>
+                                </div>
+                            </td>     
+                            <td>
+                                <a href="forms.html?id=50" class="btn btn-outline-info" data-row-index="6"> 
+                                    <i class="fas fa-pen"></i>
+                                </a>
+                           </td>                  
+                        </tr>
+                        <tr>
+                            <td data-label="İşletme Adı">AYDAMAK ÇİĞKÖFTE</td>
+                            <td data-label="Kullanıcı Adı">
+                                <input type="password" value="Bilal" readonly>
+                            </td>
+                            <td data-label="Kullanıcı Şifre">
+                                <input type="password" value="3592Bilal" readonly>
+                            </td>
+                            <td data-label="Başlangıç Tarihi">2023-10-03</td>
+                            <td data-label="Bitiş Tarihi">2024-10-03</td>
+                            <td data-label="Lisans Durumu">42 (Gün)</td>
+                            <td class="text-end">
+                                <div class="switch">
+                                    <input class="switch-input" type="checkbox" id="toggleSwitch6" checked>
+                                    <label for="toggleSwitch" class="switch-label"></label>
+                                </div>
+                            </td>     
+                            <td>
+                                <a href="forms.html?id=51" class="btn btn-outline-info" data-row-index="7"> 
+                                    <i class="fas fa-pen"></i>
+                                </a>
+                           </td>                  
+                        </tr>
+                        <tr>
+                            <td data-label="İşletme Adı">NUR BABA</td>
+                            <td data-label="Kullanıcı Adı">
+                                <input type="password" value="nurbaba" readonly>
+                            </td>
+                            <td data-label="Kullanıcı Şifre">
+                                <input type="password" value="nurbaba25" readonly>
+                            </td>
+                            <td data-label="Başlangıç Tarihi">2023-10-11</td>
+                            <td data-label="Bitiş Tarihi">2024-10-11</td>
+                            <td data-label="Lisans Durumu">50 (Gün)</td>
+                            <td class="text-end">
+                                <div class="switch">
+                                    <input class="switch-input" type="checkbox" id="toggleSwitch7" checked>
+                                    <label for="toggleSwitch" class="switch-label"></label>
+                                </div>
+                            </td>     
+                            <td>
+                                <a href="forms.html?id=52" class="btn btn-outline-info" data-row-index="8"> 
+                                    <i class="fas fa-pen"></i>
+                                </a>
+                           </td>                  
+                        </tr>
+                        <tr>
+                            <td data-label="İşletme Adı">AŞKALE KURUHAL</td>
+                            <td data-label="Kullanıcı Adı">
+                                <input type="password" value="Recep" readonly>
+                            </td>
+                            <td data-label="Kullanıcı Şifre">
+                                <input type="password" value="Recep25" readonly>
+                            </td>
+                            <td data-label="Başlangıç Tarihi">2023-10-20</td>
+                            <td data-label="Bitiş Tarihi">2024-04-20</td>
+                            <td data-label="Lisans Durumu">0 (Gün)</td>
+                            <td class="text-end">
+                                <div class="switch">
+                                    <input class="switch-input" type="checkbox" id="toggleSwitch8" checked>
+                                    <label for="toggleSwitch" class="switch-label"></label>
+                                </div>
+                            </td>     
+                            <td>
+                                <a href="forms.html?id=53" class="btn btn-outline-info" data-row-index="9"> 
+                                    <i class="fas fa-pen"></i>
+                                </a>
+                           </td>                   
+                        </tr>
+                        <tr>
+                            <td data-label="İşletme Adı">KURUHAL YÜKSEKOVA BAYİ</td>
+                            <td data-label="Kullanıcı Adı">
+                                <input type="password" value="Lokman" readonly>
+                            </td>
+                            <td data-label="Kullanıcı Şifre">
+                                <input type="password" value="Lokman30" readonly>
+                            </td>
+                            <td data-label="Başlangıç Tarihi">2023-10-25</td>
+                            <td data-label="Bitiş Tarihi">2024-10-25</td>
+                            <td data-label="Lisans Durumu">64 (Gün)</td>
+                            <td class="text-end">
+                                <div class="switch">
+                                    <input class="switch-input" type="checkbox" id="toggleSwitch9" checked>
+                                    <label for="toggleSwitch" class="switch-label"></label>
+                                </div>
+                            </td>     
+                            <td>
+                                <a href="forms.html?id=54" class="btn btn-outline-info" data-row-index="10"> 
+                                    <i class="fas fa-pen"></i>
+                                </a>
+                           </td>
+                        </tr>
+                        <tr>
+                            <td data-label="İşletme Adı">İSTANBUL KÜÇÜKKÖY KURUHAL</td>
+                            <td data-label="Kullanıcı Adı">
+                                <input type="password" value="Selami" readonly>
+                            </td>
+                            <td data-label="Kullanıcı Şifre">
+                                <input type="password" value="Selami34" readonly>
+                            </td>
+                            <td data-label="Başlangıç Tarihi">2023-06-10</td>
+                            <td data-label="Bitiş Tarihi">2024-06-10</td>
+                            <td data-label="Lisans Durumu">0 (Gün)</td>
+                            <td class="text-end">
+                                <div class="switch">
+                                    <input class="switch-input" type="checkbox" id="toggleSwitch10" checked>
+                                    <label for="toggleSwitch" class="switch-label"></label>
+                                </div>
+                            </td>     
+                            <td>
+                                <a href="forms.html?id=55" class="btn btn-outline-info" data-row-index="11"> 
+                                    <i class="fas fa-pen"></i>
+                                </a>
+                           </td>                  
+                        </tr>
+                        <tr>
+                            <td data-label="İşletme Adı">GÖLBAŞI KURUHAL</td>
+                            <td data-label="Kullanıcı Adı">
+                                <input type="password" value="gölbaşı" readonly>
+                            </td>
+                            <td  data-label="Kullanıcı Şifre">
+                                <input type="password" value="gölbaşı06" readonly>
+                            <td data-label="Başlangıç Tarihi">2023-11-25</td>
+                            <td data-label="Bitiş Tarihi">2024-11-25</td>
+                            <td data-label="Lisans Durumu">94 (Gün)</td>
+                            <td class="text-end">
+                                <div class="switch">
+                                    <input class="switch-input" type="checkbox" id="toggleSwitch11" checked>
+                                    <label for="toggleSwitch" class="switch-label"></label>
+                                </div>
+                            </td>     
+                            <td>
+                                <a href="forms.html?id=56" class="btn btn-outline-info" data-row-index="12"> 
+                                    <i class="fas fa-pen"></i>
+                                </a>
+                           </td>                  
+                        </tr>
+                        <tr>
+                            <td data-label="İşletme Adı">LALA GARDEN</td>
+                            <td data-label="Kullanıcı Adı">
+                                <input type="password" value="ahmet" readonly>
+                            </td>
+                            <td  data-label="Kullanıcı Şifre">
+                                <input type="password" value="ahmet25" readonly>
+                            <td data-label="Başlangıç Tarihi">2023-10-20</td>
+                            <td data-label="Bitiş Tarihi">2024-10-20</td>
+                            <td data-label="Lisans Durumu">59 (Gün)</td>
+                            <td class="text-end">
+                                <div class="switch">
+                                    <input class="switch-input" type="checkbox" id="toggleSwitch12" checked>
+                                    <label for="toggleSwitch" class="switch-label"></label>
+                                </div>
+                            </td>     
+                            <td>
+                                <a href="forms.html?id=57" class="btn btn-outline-info" data-row-index="13"> 
+                                    <i class="fas fa-pen"></i>
+                                </a>
+                           </td>                 
+                        </tr>
+                        <tr>
+                            <td data-label="İşletme Adı">BiLGEHAN KIRTASIYEL</td>
+                            <td data-label="Kullanıcı Adı">
+                                <input type="password" value="bilgehan" readonly>
+                            </td>
+                            <td data-label="Kullanıcı Şifre">
+                                <input type="password" value="bilgehan25" readonly>
+                            <td data-label="Başlangıç Tarihi">2024-01-29</td>
+                            <td data-label="Bitiş Tarihi">2025-01-29</td>
+                            <td data-label="Lisans Durumu">160 (Gün)</td>
+                            <td class="text-end">
+                                <div class="switch">
+                                    <input class="switch-input" type="checkbox" id="toggleSwitch13" checked>
+                                    <label for="toggleSwitch" class="switch-label"></label>
+                                </div>
+                            </td>     
+                            <td>
+                                <a href="forms.html?id=58" class="btn btn-outline-info" data-row-index="14"> 
+                                    <i class="fas fa-pen"></i>
+                                </a>
+                           </td>                   
+                        </tr>
+                        <tr>
+                            <td data-label="İşletme Adı">TORTUM SEÇ MARKET</td>
+                            <td data-label="Kullanıcı Adı">
+                                <input type="password" value="secmarket" readonly>
+                            </td>
+                            <td data-label="Kullanıcı Şifre">
+                                <input type="password" value="secmarket2525" readonly>
+                            <td data-label="Başlangıç Tarihi">2023-07-07</td>
+                            <td data-label="Bitiş Tarihi">2024-07-07</td>
+                            <td data-label="Lisans Durumu">0 (Gün)</td>
+                            <td class="text-end">
+                                <div class="switch">
+                                    <input class="switch-input" type="checkbox" id="toggleSwitch14" checked>
+                                    <label for="toggleSwitch" class="switch-label"></label>
+                                </div>
+                            </td>     
+                            <td>
+                                <a href="forms.html?id=59" class="btn btn-outline-info" data-row-index="15"> 
+                                    <i class="fas fa-pen"></i>
+                                </a>
+                           </td>                  
+                        </tr>
+                        <tr>
+                            <td data-label="İşletme Adı">YILDIZKENT SEÇ</td>
+                            <td data-label="Kullanıcı Adı">
+                                <input type="password" value="selcuk" readonly>
+                            </td>
+                            <td data-label="Kullanıcı Şifre">
+                                <input type="password" value="selcuk25" readonly>
+                            <td data-label="Başlangıç Tarihi">2024-01-08</td>
+                            <td data-label="Bitiş Tarihi">2025-01-08</td>
+                            <td data-label="Lisans Durumu">139 (Gün)</td>
+                            <td class="text-end">
+                                <div class="switch">
+                                    <input class="switch-input" type="checkbox" id="toggleSwitch15" checked>
+                                    <label for="toggleSwitch" class="switch-label"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <a href="forms.html?id=60" class="btn btn-outline-info" data-row-index="16"> 
+                                    <i class="fas fa-pen"></i>
+                                </a>
+                           </td>                       
+                        </tr>
+                        <tr>
+                            <td data-label="İşletme Adı">FREE BULL CAFE</td>
+                            <td data-label="Kullanıcı Adı">
+                                <input type="password" value="rçun" readonly>
+                            </td>
+                            <td data-label="Kullanıcı Şifre">
+                                <input type="password" value="Orçun08" readonly>
+                            <td data-label="Başlangıç Tarihi">2024-05-29</td>
+                            <td data-label="Bitiş Tarihi">2025-05-29</td>
+                            <td data-label="Lisans Durumu">280 (Gün)</td>
+                            <td class="text-end">
+                                <div class="switch">
+                                    <input class="switch-input" type="checkbox" id="toggleSwitch16" checked>
+                                    <label for="toggleSwitch" class="switch-label"></label>
+                                </div>
+                            </td>     
+                            <td>
+                                <a href="forms.html?id=61" class="btn btn-outline-info" data-row-index="17"> 
+                                    <i class="fas fa-pen"></i>
+                                </a>
+                           </td>                
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

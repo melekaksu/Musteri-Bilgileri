@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onayda Bekleyenler</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="onay.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h3>ONAY BEKLEYEN MÜŞTERİLER</h3>
+
+        <button id="logoutButton" class="btn btn-danger" onclick="window.location.href='index.html'">Çıkış</button>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Vergi Numarası</th>
+                    <th>İşletme Adı</th>
+                    <th>Ad</th>
+                    <th>Soyad</th>
+                    <th>Telefon</th>
+                    <th>Onayla</th>
+                </tr>
+            </thead>
+            <tbody id="customerTableBody">
+                <tr>
+                    <td>314361361</td>
+                    <td>ERPA LTD. ŞTİ.</td>
+                    <td>Mehmet</td>
+                    <td>Yılmaz</td>
+                    <td>05321304477</td>
+                    <td>
+                        <button class="btn btn-success" onclick="approveCustomer(this)">Onayla</button>
+                        <button class="btn btn-danger" onclick="showDeleteConfirmation(this)">Sil</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>987654321</td>
+                    <td>ABC GIDA A.Ş.</td>
+                    <td>Ayşe</td>
+                    <td>Kaya</td>
+                    <td>05432659874</td>
+                    <td>
+                        <button class="btn btn-success" onclick="approveCustomer(this)">Onayla</button>
+                        <button class="btn btn-danger" onclick="showDeleteConfirmation(this)">Sil</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Silme Onay Modalı -->
+    <div class="modal fade" id="deleteConfirmationModal" tabindex="-1" aria-labelledby="deleteConfirmationModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteConfirmationModalLabel">Müşteri Silme Onayı</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Seçilen müşteriyi silmek istiyor musunuz?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="closeModal()">Hayır</button>
+                    <button type="button" class="btn btn-danger" onclick="deleteRow()">Evet, Sil</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="onay.js"></script>
+    
+</body>
+</html>
